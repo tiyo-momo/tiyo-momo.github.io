@@ -1,0 +1,55 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
+---
+
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRD0SNHE5B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-JRD0SNHE5B");
+    </script>
+
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="VTuber, VRCなどの3DCGモデルを制作します！" />
+    <meta name="author" content="ちよ" />
+    <meta name="keywords" content="choco house, ちよ, 3DCG, VTuber, アバター, 依頼" />
+
+    <!--  twitter(X) card  -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mkty001" />
+    <meta name="twitter:creator" content="@mkty001" />
+    <meta property="og:image" content="https://media.githubusercontent.com/media/tiyo-momo/tiyo-momo.github.io/main/public/assets/images/share/header.png">
+    <meta property="og:url" content="https://tiyo-momo.github.io/" />
+    <meta property="og:title" content="choco house" />
+    <meta property="og:description" content="VTuber, VRCなどの3DCGモデルを制作します！" />
+    <meta name="viewport"  content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- link -->
+    <link rel="shortcut icon" href="/assets/images/share/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="/assets/images/share/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon" href="/assets/images/share/site_icon.png">
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <title>{title} - choco house</title>
+  </head>
+  <body>
+    <Header />
+
+    <article>
+      <slot />
+    </article>
+
+    <Footer />
+  </body>
+</html>
+

@@ -1,0 +1,147 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Contact    from "../components/Contact.astro";
+---
+
+<BaseLayout title="About">
+  <div class="works">
+    <h2>
+      <p>Works</p>
+    </h2>
+
+    <span class="container-works">
+      <img src="/assets/images/about/works_ousama_ao.png"       alt="works: ousama ao" />
+      <img src="/assets/images/about/works_momijino_suzume.png" alt="works: momijino suzume" />
+    </span>
+  </div>
+
+  <div class="works">
+    <h2>About</h2>
+
+    <span class="container-about">
+      <img src="/assets/images/about/icon.png" alt="creator icon" />
+      <span class="container-column" style="margin-left: 1rem;">
+        <p>絵と自主制作アニメとアバターと衣装とフィギュアを作りたい。</p>
+        <p>アニメ背景制作会社勤務。</p>
+        <p>3Dモデルのご依頼受け付け中です。</p>
+        <span class="container-sns">
+          <a href="https://twitter.com/mkty001" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/images/service-icon/x.png" />
+          </a>
+          <a href="https://www.youtube.com/@momo456" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/images/service-icon/youtube.png" />
+          </a>
+          <a href="https://choco-house.booth.pm/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/images/service-icon/booth.png" />
+          </a>
+          <a href="https://skeb.jp/@mkty001" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/images/service-icon/skeb.png" />
+          </a>
+        </span>
+      </span>
+    </span>
+  </div>
+
+  <Contact />
+</BaseLayout>
+
+<style>
+.works {
+  margin : 0 0 3rem 0;
+  padding: 0;
+}
+
+
+.container-sns {
+  display        : flex;
+  flex-direction : row;
+  align-items: center;
+  width : 100%;
+  height: auto;
+  margin : .5rem 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.container-sns a img {
+  width : auto;
+  height: 2rem;
+  margin : .5rem 1rem 0 0;
+  padding: 0;
+}
+
+.container-works {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items    : center;
+  width : 100%;
+  height: auto;
+}
+
+.container-works img {
+  width  : 50%;
+  height : auto;
+  margin : 1rem 0;
+  padding: 0;
+}
+
+
+.container-about {
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+  width : 100%;
+  height: auto;
+}
+
+.container-about img {
+  width    : 20dvw;
+  max-width: 140px;
+  height   : auto;
+  margin : 0 1rem 0 3rem;
+  padding: 0;
+}
+
+.container-about p {
+  margin : 2px 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+
+@media (max-width: 640px) {
+.container-about {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+}
+
+.container-about img {
+  margin : .5rem .5rem 2rem .5rem;
+  padding: 0;
+  width    : 20dvw;
+  max-width: 140px;
+  height   : auto;
+}
+
+.container-about p {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  width  : 100%;
+  margin : 2px 0;
+  padding: 0;
+}
+
+
+.container-sns {
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  justify-content: center;
+  width : 100%;
+  margin: 1rem 0;
+}
+</style>
+

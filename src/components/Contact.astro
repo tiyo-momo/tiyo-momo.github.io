@@ -1,0 +1,62 @@
+---
+
+---
+
+<div class="contact">
+  <h2>Contact</h2>
+
+  <span>
+    <p>ご依頼・お見積もり・ご相談はDMください。</p>
+    <p>DMが使用できない場合は、e-mailでも対応可能です。</p>
+    <p>ご依頼・ご相談の際にはデザイン画像（あれば）をお送りください。</p>
+  </span>
+  <p class="decoration-box">momo.tngwmk@gmail.com</p>
+</div>
+
+<style>
+.contact {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  width : 100%;
+  height: auto;
+  margin : 0;
+  padding: 0;
+}
+
+.contact span p {
+  margin : .2rem 0;
+  padding: 0;
+}
+
+
+.decoration-box {
+  position: relative;
+  margin  : 2rem;
+  padding : .5rem 2rem;
+  border  : solid 2px black;
+  border-radius: 3px 0 3px 0;
+  font-weight: bold;
+}
+
+.decoration-box:before, .decoration-box:after
+{
+  content : '';
+  position: absolute;
+  width : 10px;
+  height: 10px;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+
+.decoration-box:after {
+  top : -12px;
+  left: -12px;
+}
+
+.decoration-box:before {
+  bottom: -12px;
+  right : -12px;
+}
+</style>
+

@@ -11,7 +11,7 @@ html {
   padding: 0;
   font-family: "Roboto";
   font-style : normal;
-  background : linear-gradient(rgba(255, 135, 210, 1) 5%, rgba(148, 217, 255) 15%, rgba(243, 241, 255) 35%, rgba(243, 241, 255, 1));
+  background : linear-gradient(rgba(255, 135, 210, .8) 8dvh, rgba(148, 217, 255, .8) 16dvh, rgba(243, 241, 255, 1) 32dvh, rgba(243, 241, 255, 1));
   background-color: rgba(243, 241, 255, 1);
 }
 
@@ -86,6 +86,11 @@ a, a:visited {
 
 
 @media (max-width: 640px) {
+  html {
+    background : linear-gradient(rgba(255, 135, 210, .8) 2dvh, rgba(148, 217, 255, .8) 15dvh, rgba(243, 241, 255, 1) 35dvh, rgba(243, 241, 255, 1));
+  }
+
+
   body {
     width: 90dvw;
   }
